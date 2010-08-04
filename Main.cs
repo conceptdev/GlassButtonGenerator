@@ -43,7 +43,7 @@ namespace GlassButtonGenerator
 	{
 		string text = "Buy now!";
 		string filename = "buttonDigital"; // saves as filename.png and filename@2x.png 
-		string yourname = "craigdunn"; // eg. /Users/YOUR_NAME/Desktop/ location to save the images to
+		string yourname = "YOUR_NAME"; // eg. /Users/YOUR_NAME/Desktop/ location to save the images to
 
 		public override void ViewDidLoad ()
 		{	
