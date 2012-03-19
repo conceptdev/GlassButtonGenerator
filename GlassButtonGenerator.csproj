@@ -6,15 +6,12 @@
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{ADB9E855-0AD8-40E6-949E-4455D6E6C072}</ProjectGuid>
-    <ProjectTypeGuids>{E613F3A2-FE9C-494F-B74E-F63BCB86FEA6};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
     <RootNamespace>GlassButtonGenerator</RootNamespace>
     <AssemblyName>GlassButtonGenerator</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <SupportedDevices>IPhoneAndIPad</SupportedDevices>
     <StartupObject>GlassButtonGenerator.Application</StartupObject>
-    <BundleVersion>1</BundleVersion>
-    <BundleDisplayName>GlassButton</BundleDisplayName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -28,7 +25,6 @@
     <MtouchSdkVersion>3.2</MtouchSdkVersion>
     <MtouchI18n />
     <MtouchLink>None</MtouchLink>
-    <MtouchMinimumOS>3.0</MtouchMinimumOS>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -39,7 +35,6 @@
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>False</MtouchDebug>
     <MtouchSdkVersion>3.0</MtouchSdkVersion>
-    <MtouchMinimumOS>3.0</MtouchMinimumOS>
     <MtouchI18n />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
@@ -54,7 +49,6 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchSdkVersion>3.2</MtouchSdkVersion>
     <MtouchI18n />
-    <MtouchMinimumOS>3.2</MtouchMinimumOS>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -65,7 +59,6 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>False</MtouchDebug>
     <MtouchSdkVersion>3.0</MtouchSdkVersion>
-    <MtouchMinimumOS>3.0</MtouchMinimumOS>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
