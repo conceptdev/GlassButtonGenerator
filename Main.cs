@@ -52,6 +52,29 @@ namespace GlassButtonGenerator
 			UIColor tint = UIColor.FromHSBA(0.267f, 1.000f,0.667f,1.000f); // lime green
 			//tint = UIColor.Red;
 
+			
+
+// UPDATE: There is now a very useful GlassButton class 'built-in' to MonoTouch via MonoTouch.Dialog
+// this code shows how to use it. See github for more info and the code:
+// https://github.com/migueldeicaza/MonoTouch.Dialog/blob/master/MonoTouch.Dialog/Utilities/GlassButton.cs
+// If you would still like to generate static images that code follows...
+			UIColor clickedTint = UIColor.FromRGBA(42/255f, 95/255f, 34/255f,1.000f); // lime green
+
+			var mtb = new MonoTouch.Dialog.GlassButton(new RectangleF(20,250,280,50));
+			mtb.SetTitle("MT.D dynamic button", UIControlState.Normal);
+			mtb.Font = UIFont.BoldSystemFontOfSize(14f);
+			mtb.HighlightedColor= clickedTint;
+			mtb.NormalColor = tint;
+			mtb.DisabledColor = UIColor.Gray;
+			Add (mtb);
+
+
+
+
+
+// IF you still want to embed generated image glassbuttons...
+// OLD STYLE static image generation code
+
 			// Regular iPad/iPhone button
 			UIGlassButton glassButton = new UIGlassButton(new RectangleF(20, 50, 280, 48));
 			glassButton.SetTitle(text, UIControlState.Normal);
